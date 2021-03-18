@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/trailer_pict"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/trailer_pict" />
+
+        <ImageView
+            android:id="@+id/iv_poster"
+            android:layout_width="144dp"
+            android:layout_height="217dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_backdrop"
+            app:srcCompat="@drawable/pride_prejudice" />
+
+        <TextView
+            android:id="@+id/tv_dummy_title_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/anton_regular"
+            android:text="@string/txt_dummy_title_detail"
+            android:textColor="@color/font_blue1"
+            android:textSize="@dimen/_24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_poster"
+            app:layout_constraintStart_toEndOf="@+id/iv_poster"
+            app:layout_constraintTop_toTopOf="@+id/iv_poster"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_Release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/txt_release_date"
+            android:textColor="@color/font_blue1"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dummy_title_detail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_dummy_title_detail"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dummy_title_detail" />
+
+        <TextView
+            android:id="@+id/tv_dummy_rd_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/txt_dummy_rd_detail"
+            android:textColor="@color/font_color2"
+            android:textSize="@dimen/_15sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_Release_date"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_Release_date"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Release_date" />
+
+        <TextView
+            android:id="@+id/tv_rating_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/txt_rating"
+            android:textColor="@color/font_blue1"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dummy_rd_detail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_dummy_rd_detail"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dummy_rd_detail" />
+
+        <TextView
+            android:id="@+id/tv_dummy_rating_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/txt_dummy_rate_detail"
+            android:textColor="@color/font_color2"
+            android:textSize="@dimen/_15sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_rating_detail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_rating_detail"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rating_detail" />
+
+        <TextView
+            android:id="@+id/tv_synopsis_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/txt_synopsis"
+            android:textColor="@color/font_blue1"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_poster"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/iv_poster"
+            app:layout_constraintTop_toBottomOf="@+id/iv_poster" />
+
+        <TextView
+            android:id="@+id/tv_dummy_synopsis_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:maxLines="15"
+            android:text="@string/txt_dummy_synopsis_detail"
+            android:textColor="@color/font_color2"
+            android:textSize="@dimen/_15sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_synopsis_detail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_synopsis_detail"
+            app:layout_constraintTop_toBottomOf="@+id/tv_synopsis_detail" />
+
+        <TextView
+            android:id="@+id/tv_genre_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/txt_Genre"
+            android:textColor="@color/font_blue1"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_dummy_synopsis_detail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_dummy_synopsis_detail" />
+
+        <TextView
+            android:id="@+id/tv_dummy_genre_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/txt_dummy_genre_detail"
+            app:layout_constraintEnd_toEndOf="@+id/tv_genre_detail"
+            app:layout_constraintStart_toStartOf="@+id/tv_genre_detail"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_back_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow_blue"
+            android:contentDescription="@string/txt_floating_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

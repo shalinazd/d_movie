@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_16dp"
+    android:orientation="vertical"
+    tools:context=".OnBoarding1">
+
+    <ImageView
+        android:id="@+id/iv_ob1"
+        android:layout_marginTop="@dimen/_70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboarding1" />
+
+    <TextView
+        android:id="@+id/tv_ob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:text="@string/txt_ob1"
+        android:textSize="@dimen/_20sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/iv_slide_ob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slide"
+        android:layout_marginTop="@dimen/_100dp"
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_80dp">
+        <TextView
+            android:id="@+id/tv_skip_ob1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_skip"
+            android:textSize="@dimen/_22sp"
+            android:textColor="@color/skipcolor"
+            android:gravity="left"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/tv_next_ob1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_next"
+            android:textSize="@dimen/_22sp"
+            android:textColor="@color/nextcolor"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

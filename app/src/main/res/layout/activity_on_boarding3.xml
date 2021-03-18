@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_16dp"
+    android:orientation="vertical"
+    tools:context=".OnBoarding1">
+
+    <ImageView
+        android:id="@+id/iv_ob1"
+        android:layout_marginTop="@dimen/_40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboarding3" />
+
+    <TextView
+        android:id="@+id/tv_ob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:text="@string/txt_ob2"
+        android:textSize="@dimen/_20sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/iv_slide_ob1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slide3"
+        android:layout_marginTop="@dimen/_100dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_start_ob3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_40dp"
+        android:text="@string/txt_start"
+        android:textSize="@dimen/_22sp"
+        android:textColor="@color/nextcolor"
+        android:layout_gravity="right" />
+
+</LinearLayout>
